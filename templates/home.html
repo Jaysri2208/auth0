@@ -1,0 +1,15 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Auth0 Example</title>
+</head>
+<body>
+  {% if user_name != "Guest" %}
+    <h1>Welcome {{ user_name }}!</h1>
+    <p><a href="/logout" onclick="alert('Successfully logged out');">Logout</a></p>
+  {% else %}
+    <h1>Welcome Guest</h1>
+    <p><a href="/login">Login</a></p>
+  {% endif %}
+</body>
+</html>
